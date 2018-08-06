@@ -28,5 +28,6 @@ This repository contains code to stream video stream from Raspberry Pi camera or
 
 * https://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/
 * https://pypi.python.org/pypi/kafka-python
+* https://scotch.io/tutorials/build-a-distributed-streaming-system-with-apache-kafka-and-python
 * Author : Sreekiran A R, sreekiranar@gmail.com
 * Code Review : Jatan Sharma, jatansharma@gmail.com
