@@ -4,13 +4,14 @@ import time
 import cv2
 from kafka import KafkaProducer
 #Initialising Kafka Producer, cluster IP :<your Kafka server IP>, topic: video
-producer = KafkaProducer(bootstrap_servers='<your Kafka server IP>')
+producer = KafkaProducer(bootstrap_servers='<your kafka server IP>:9092')
 topic = 'video' #set the topic name
 #Initialising PiCamera
 camera = PiCamera()
-camera.resolution = (1920, 1080)
-camera.framerate = 32
-rawCapture = PiRGBArray(camera, size=(1920, 1080))
+resolution=(1280,720)
+camera.resolution = resolution
+camera.framerate = 10
+rawCapture = PiRGBArray(camera, size=resolution)
 
 time.sleep(0.1)
 print "Capturing!!!"
